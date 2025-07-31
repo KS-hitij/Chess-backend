@@ -34,7 +34,7 @@ export default class Game {
                 loser.send(JSON.stringify({ type: "lose", payload: { message: "You lost the game" } }));
                 this.black.close();
                 this.white.close();
-            },400);
+            },5);
             return;
         }
         if(this.board.isCheck()){
